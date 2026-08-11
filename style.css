@@ -1,0 +1,12 @@
+div {
+  font-size: 20px;
+  font-family: comic sans ms;
+}
+
+div.class1 {
+  color: red;
+}
+
+div.class2 {
+  color: blue;
+}
