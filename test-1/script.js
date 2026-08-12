@@ -4,7 +4,9 @@ const sResult = document.getElementById("result"),
 document.getElementById("checkTemperature").addEventListener("click", function() {
   fetch(wUrl)
     .then(response => response.json())
-    .then(data => {
-      sResult.textContent = data.current_weather.temperature + "°C";
+    .then(data => sResult.textContent = data.current_weather.temperature + "°C")
+    .catch(error => {
+      console.error("Ошибка при получении данных о температуре:", error);
+      sResult.textContent = "Ошибка при получении данных";
     });
 });
