@@ -8,8 +8,7 @@ document.getElementById("checkTemperature").addEventListener("click", function()
       const lon = geo.longitude;
       const wUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
       return fetch(wUrl);
-    })
-    .then(response => response.json())
+    }).then(response => response.json())
     .then(data => sResult.textContent = data.current_weather.temperature + "°C")
     .catch(error => {
       console.error("Ошибка при получении данных о температуре:", error);
