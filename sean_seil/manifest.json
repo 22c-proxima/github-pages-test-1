@@ -1,0 +1,21 @@
+{
+  "name": "Кисказавр три тысячи",
+  "short_name": "Кисказавр 3000",
+  "description": "Приложение для хуефикации",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "orientation": "landscape",
+  "icons": [
+    {
+      "src": "icons/react_icon_192.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "icons/react_icon_512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
